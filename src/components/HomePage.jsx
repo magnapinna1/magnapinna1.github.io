@@ -124,7 +124,7 @@ const HomePage = ({ effectsOn, mousePos }) => (
               <h2 className="role-title">Software Engineer</h2>
             </header>
             <div className="bio-content">
-              <p>I'm a Software Engineer working in Cybersecurity at JPMorganChase. I mainly use Python and Java to build cool stuff.</p>
+              <p>I'm a Software Engineer at <a href="https://wilcore.io/">Wilcore</a>. I'm currently working with the VA on healthcare innovations! I mainly use Python and Java to build cool stuff.</p>
               <p>Check out my projects page to see some of that cool stuff.</p>
             </div>
             <div className="skills-section">

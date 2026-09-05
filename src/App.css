@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@200;300;400&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@200;300;400&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
 
 :root {
   --bg-sky: #13171c;
@@ -146,7 +146,7 @@ body {
 }
 
 .post-date {
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 0.8rem;
   color: var(--text-muted);
   letter-spacing: 2px;

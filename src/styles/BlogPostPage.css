@@ -76,7 +76,7 @@
 .back-link {
     display: inline-flex;
     align-items: center;
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 0.7rem;
     letter-spacing: 2px;
     color: var(--text-main);
@@ -117,7 +117,7 @@
 }
 
 .post-meta-date {
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 0.75rem;
     letter-spacing: 2px;
     color: var(--text-muted);
@@ -141,7 +141,7 @@
 }
 
 .post-tag {
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 0.6rem;
     letter-spacing: 2px;
     padding: 3px 10px;
@@ -168,7 +168,7 @@
 }
 
 .post-body h3 {
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 0.85rem;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -200,7 +200,7 @@
 }
 
 .post-body code {
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 0.85em;
     background: rgba(255, 255, 255, 0.05);
     padding: 2px 6px;
@@ -241,7 +241,7 @@
 }
 
 .related-heading {
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 0.7rem;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -271,7 +271,7 @@
 }
 
 .related-date {
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 0.65rem;
     color: var(--text-muted);
     letter-spacing: 2px;
