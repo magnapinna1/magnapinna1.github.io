@@ -6,8 +6,8 @@ import path from 'path';
 export default defineConfig(({ command, mode }) => {
   // If USE_DUMMY_CONTENT is true, point to dummy folder. Otherwise private.
   const contentDir = process.env.USE_DUMMY_CONTENT === 'true'
-    ? path.resolve(__dirname, './src/dummy-content')
-    : path.resolve(__dirname, './src/private-content');
+    ? path.resolve(import.meta.dirname, './src/dummy-content')
+    : path.resolve(import.meta.dirname, './src/private-content');
 
   return {
     resolve: {
@@ -30,10 +30,16 @@ export default defineConfig(({ command, mode }) => {
       outDir: 'build',
       rollupOptions: {
         output: {
-          manualChunks: {
-            'vendor-react': ['react', 'react-dom'],
-            'vendor-router': ['react-router', 'react-router-dom'],
-            'vendor-markdown': ['react-markdown'],
+          manualChunks(id) {
+            if (id.includes('node_modules/react-dom') || id.includes('node_modules/react/')) {
+              return 'vendor-react';
+            }
+            if (id.includes('node_modules/react-router')) {
+              return 'vendor-router';
+            }
+            if (id.includes('node_modules/react-markdown')) {
+              return 'vendor-markdown';
+            }
           }
         }
       }
